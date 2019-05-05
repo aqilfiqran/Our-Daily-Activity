@@ -24,4 +24,12 @@ class UserController extends Controller
     {
         return view('fashion');
     }
+    public function money()
+    {
+        return view('money');
+    }
+    public function healthy()
+    {
+        return view('healthy');
+    }
 }
