@@ -15,4 +15,12 @@ class AdminController extends Controller
     {
         return view('admin.post');
     }
+    public function create()
+    {
+        return view('admin.create');
+    }
+    public function edit()
+    {
+        return view('admin.edit');
+    }
 }
