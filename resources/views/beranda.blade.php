@@ -21,7 +21,7 @@ Home
                         <div class="card">
                             <img class="card-img-top" src="{{asset('img/work.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                            <a href="{{url('/work')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
                                         Work Schedule
                                     </b>
@@ -33,7 +33,7 @@ Home
                         <div class="card">
                             <img class="card-img-top" src="{{asset('img/fashion.png')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="{{url('/fashion')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
                                         Fashion Schedule
                                     </b>
@@ -45,7 +45,7 @@ Home
                         <div class="card">
                             <img class="card-img-top" src="{{asset('img/4.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="{{url('/healthy')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
                                         Healthy Schedule
                                     </b>
@@ -57,7 +57,7 @@ Home
                         <div class="card">
                             <img class="card-img-top" src="{{asset('img/uang.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="{{url('/money')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
                                         Money Box
                                     </b>
