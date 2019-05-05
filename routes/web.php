@@ -22,3 +22,7 @@ Route::get('/admin/post', 'AdminController@post');
 Route::get('/admin/manage', 'AdminController@index');
 Route::get('/article', 'UserController@article');
 Route::get('/work', 'UserController@work');
+Route::get('/fashion', 'UserController@fashion');
+Route::get('/admin/create', 'AdminController@create');
+
+
