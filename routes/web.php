@@ -21,3 +21,4 @@ Route::get('/admin', 'AdminController@index')->middleware('auth');
 Route::get('/admin/post', 'AdminController@post');
 Route::get('/admin/manage', 'AdminController@index');
 Route::get('/article', 'UserController@article');
+Route::get('/work', 'UserController@work');

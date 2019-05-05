@@ -16,4 +16,8 @@ class UserController extends Controller
         $post = Article::all();
         return view('article', compact('post'));
     }
+     public function work()
+    {
+        return view('work');
+    }
 }
