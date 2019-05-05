@@ -20,4 +20,8 @@ class UserController extends Controller
     {
         return view('work');
     }
+    public function fashion()
+    {
+        return view('fashion');
+    }
 }
