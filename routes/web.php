@@ -15,8 +15,9 @@ Route::get('/', 'UserController@index');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->middleware(['auth', 'job']);
 
-Route::get('/admin', 'AdminController@index');
-Route::get('/post', 'AdminController@post');
-Route::get('/manage', 'AdminController@index');
+Route::get('/admin', 'AdminController@index')->middleware('auth');
+Route::get('/admin/post', 'AdminController@post');
+Route::get('/admin/manage', 'AdminController@index');
+Route::get('/article', 'UserController@article');
