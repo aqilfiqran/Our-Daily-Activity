@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -64,7 +64,7 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="{{('img/ikon1.jpg')}}" class="user-image" alt="User Image">
-                                <span class="hidden-xs">Aqil Fiqran</span>
+                                <span class="hidden-xs">{{Auth::user()->username}}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
@@ -72,13 +72,16 @@
                                     <img src="{{('img/ikon1.jpg')}}" class="img-circle" alt="User Image">
 
                                     <p>
-                                        Aqil Fiqran - Web Developer
+                                        {{Auth::user()->username}} - Web Developer
                                     </p>
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-right" style="margin-right:35%;">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                        <form action="{{ route('logout') }}" method="POST">
+                                        <button type="submit" class="btn btn-default btn-flat" >Sign out</button>
+                                            @csrf
+                                        </form>
                                     </div>
                                 </li>
                             </ul>
