@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
 @section('title')
-work schedule
+money box
 @endsection
 
 @section('content')
+
 <div class="container">
     <div class="col-md-12">
         <div class="row">
@@ -15,33 +16,21 @@ work schedule
              <label>Date and Time:</label>
             <input type="text" class="form-control datetimepicker" placeholder="27/03/2019" />
         <div class="form-group">
-            <label for="exampleInputPassword1">veil</label>
+            <label for="exampleInputPassword1">saldo</label>
             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">clothes</label>
+            <label for="exampleInputPassword1">credit</label>
             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">skirt/pants</label>
+            <label for="exampleInputPassword1">debit</label>
             <input type="text" class="form-control" id="exampleInputPassword1" placeholder="">
         </div>
-
-
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Upload your fashion</span>
-        </div>
-
-
-        <div class="custom-file">
-            <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-        </div>
-    </div>
     </form>
 </div>
 </div>
 </div>
 </div>
+
 @endsection

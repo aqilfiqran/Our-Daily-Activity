@@ -109,8 +109,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                            <li class="active"><a href="{{url('/admin/create')}}"><i class="fa fa-circle-o"></i> Create Article</a></li>
+                            <li><a href="{{url('/admin/edit')}}"><i class="fa fa-circle-o"></i> Edit Article</a></li>
                         </ul>
                     </li>
                     <li class="header">User</li>
@@ -122,8 +122,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="{{url('/manage')}}"><i class="fa fa-circle-o"></i>Manage</a></li>
-                            <li><a href="{{url('/post')}}"><i class="fa fa-circle-o"></i>Post</a></li>
+                            <li><a href="{{url('/admin/manage')}}"><i class="fa fa-circle-o"></i>Manage</a></li>
+                            <li><a href="{{url('/admin/post')}}"><i class="fa fa-circle-o"></i>Post</a></li>
                         </ul>
                     </li>
             </section>
