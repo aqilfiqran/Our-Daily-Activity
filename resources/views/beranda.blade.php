@@ -19,9 +19,9 @@ Home
                 <div class="carousel-inner pb-3 ">
                     <div class="carousel-item active">
                         <div class="card">
-                            <img class="card-img-top" src="{{asset('img/work.jpg')}}" alt="First slide">
+                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                            <a href="{{url('/work')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
                                         Work Schedule
                                     </b>
@@ -31,11 +31,11 @@ Home
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img class="card-img-top" src="{{asset('img/fashion.png')}}" alt="First slide">
+                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="{{url('/fashion')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
-                                        Fashion Schedule
+                                        Work Schedule
                                     </b>
                                 </a>
                             </div>
@@ -43,11 +43,11 @@ Home
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img class="card-img-top" src="{{asset('img/4.jpg')}}" alt="First slide">
+                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="{{url('/healthy')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
-                                        Healthy Schedule
+                                        Work Schedule
                                     </b>
                                 </a>
                             </div>
@@ -55,11 +55,11 @@ Home
                     </div>
                     <div class="carousel-item">
                         <div class="card">
-                            <img class="card-img-top" src="{{asset('img/uang.jpg')}}" alt="First slide">
+                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
                             <div class="card-body text-center bg-info">
-                                <a href="{{url('/money')}}" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
+                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
                                     <b>
-                                        Money Box
+                                        Work Schedule
                                     </b>
                                 </a>
                             </div>

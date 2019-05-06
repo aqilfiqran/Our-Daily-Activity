@@ -103,14 +103,14 @@
                     <li class="header">Article</li>
                     <li class="active treeview">
                         <a href="#">
-                            <i class="fa fa-dashboard"></i> <span>Make Article</span>
+                            <i class="fa fa-dashboard"></i> <span>Article</span>
                             <span class="pull-right-container">
                                 <i class="fa fa-angle-left pull-right"></i>
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li class="active"><a href="{{url('/admin/create')}}"><i class="fa fa-circle-o"></i> Create Article</a></li>
-                            <li><a href="{{url('/admin/edit')}}"><i class="fa fa-circle-o"></i> Edit Article</a></li>
+                            <li class="active"><a href="{{url('/admin_create')}}"><i class="fa fa-circle-o"></i>Create</a></li>
+                            <li><a href="{{url('/admin_edit')}}"><i class="fa fa-circle-o"></i>Edit</a></li>
                         </ul>
                     </li>
                     <li class="header">User</li>
@@ -122,8 +122,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="{{url('/admin/manage')}}"><i class="fa fa-circle-o"></i>Manage</a></li>
-                            <li><a href="{{url('/admin/post')}}"><i class="fa fa-circle-o"></i>Post</a></li>
+                            <li><a href="{{url('/admin_manage')}}"><i class="fa fa-circle-o"></i>Manage</a></li>
+                            <li><a href="{{url('/admin_post')}}"><i class="fa fa-circle-o"></i>Post</a></li>
                         </ul>
                     </li>
             </section>
@@ -362,10 +362,12 @@
     <script src="{{asset('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
     <!-- Bootstrap WYSIHTML5 -->
     <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
+    {{-- <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script> --}}
     <!-- Slimscroll -->
     <script src="{{asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
     <!-- FastClick -->
     <script src="{{asset('bower_components/fastclick/lib/fastclick.js')}}"></script>
+    {{-- <script src="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script> --}}
     <!-- AdminLTE App -->
     <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
