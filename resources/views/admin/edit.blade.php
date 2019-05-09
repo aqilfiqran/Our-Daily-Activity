@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 
 @section('title')
-edit article
+<div class="container">edit article
+</div>
 @endsection
 
 @section('content')
