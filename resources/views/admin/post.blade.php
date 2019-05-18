@@ -24,69 +24,18 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($user as $users)
+                                {{-- @php
+                                    $diet = Diet::where('member_id',$users->id)->user;
+                                @endphp --}}
                                 <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
+                                    <td>{{$users->username}}</td>
+                                    <td class="text-center">{{$users->diet->count()}}</td>
+                                    <td class="text-center">{{$users->fashion->count()}}</td>
+                                    <td class="text-center">{{$users->work->count()}}</td>
+                                    <td class="text-center">{{$users->tabungan->count()}}</td>
                                 </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
-                                <tr>
-                                    <td>Zakiatus Safara</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">4</td>
-                                    <td class="text-center">2</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

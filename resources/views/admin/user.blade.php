@@ -21,42 +21,12 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @foreach ($user as $users)
                                 <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
+                                    <td>{{$users->username}}</td>
+                                    <td><a href="{{route('admin.delete',$users->id)}}"><i class="fas fa-trash"></i></a></td>
                                 </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr class="text-center">
-                                    <td>Zakiatus Safara</td>
-                                    <td>5</td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
