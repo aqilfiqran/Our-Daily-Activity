@@ -24,3 +24,8 @@ Route::get('/admin_edit', 'AdminController@edit');
 Route::get('/admin_manage', 'AdminController@index');
 Route::get('/article', 'UserController@article');
 Route::get('/work', 'UserController@work');
+Route::get('/fashion', 'UserController@fashion');
+Route::get('/money', 'UserController@money');
+Route::get('/healthy', 'UserController@healthy');
+Route::get('/calender', 'UserController@calender');
+
