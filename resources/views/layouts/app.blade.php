@@ -86,7 +86,7 @@
         </nav>
 
         <div class="page-header header-filter pt-5 mt-5"
-            style="background-image: url('{{asset('img/bg.png')}}'); background-size: cover; background-position: top center;">
+            style="background-image: url('{{asset('img/img5.jpg')}}'); background-size: cover; background-position: top center;">
             @yield('content')
 
         </div>
