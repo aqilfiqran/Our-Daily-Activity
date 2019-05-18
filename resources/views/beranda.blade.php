@@ -21,7 +21,7 @@ Home
                         <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
                             <img class="card-img-top" src="{{asset('img/img1.jpg')}}" alt="First slide">
                             <div class="card-body text-center ">
-                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                <a href="{{url('money')}}" class="card-title" style="color:white;font-size:30px;">
                                     <b style>
                                         Money Box
                                     </b>
@@ -33,7 +33,7 @@ Home
                         <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
                             <img class="card-img-top" src="{{asset('img/img13.jpeg')}}" alt="First slide">
                             <div class="card-body text-center ">
-                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                            <a href="{{url('healthy')}}" class="card-title" style="color:white;font-size:30px;">
                                     <b style>
                                         Health Diet
                                     </b>
@@ -45,7 +45,7 @@ Home
                         <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
                             <img class="card-img-top" src="{{asset('img/img9.jpeg')}}" alt="First slide">
                             <div class="card-body text-center ">
-                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                <a href="{{url('fashion')}}" class="card-title" style="color:white;font-size:30px;">
                                     <b style>
                                         Fashion Planning
                                     </b>
@@ -57,7 +57,7 @@ Home
                         <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
                             <img class="card-img-top" src="{{asset('img/img12.jpeg')}}" alt="First slide">
                             <div class="card-body text-center ">
-                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                <a href="{{url('work')}}" class="card-title" style="color:white;font-size:30px;">
                                     <b style>
                                         Work Schedule
                                     </b>
