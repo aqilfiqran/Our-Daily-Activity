@@ -19,12 +19,15 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{{asset('css/calender.css')}}">
 
 </head>
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md bg-info fixed-top navbar-color-on-scroll" color-on-scroll="100">
+        <nav class="navbar navbar-expand-md  fixed-top navbar-color-on-scroll" color-on-scroll="100"style="background-color: rgba(128, 86, 169,0.8);">
             <div class="container">
                 <div class="navbar-translate">
                     <a class="navbar-brand" href="{{ url('/') }}" rel="tooltip" title="Coded by Creative Tim"
@@ -85,14 +88,14 @@
         <div class="page-header header-filter pt-5 mt-5"
             style="background-image: url('{{asset('img/bg.png')}}'); background-size: cover; background-position: top center;">
             @yield('content')
-            <div class="footer register-footer text-center">
-                <h6>©
-                    <script>
-                        document.write(new Date().getFullYear())
 
-                    </script>, made with <i class="fa fa-heart heart"></i> by BAZAR</h6>
-            </div>
-            </main>
+        </div>
+        <div class="footer register-footer text-center">
+            <h6>©
+                <script>
+                    document.write(new Date().getFullYear())
+
+                </script>, made with <i class="fa fa-heart heart"></i> by BAZAR</h6>
         </div>
         <!--   Core JS Files   -->
         <script src="{{asset('assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
@@ -107,19 +110,22 @@
         <script src="{{asset('assets/js/plugins/bootstrap-datepicker.js')}}" type="text/javascript"></script>
         <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
         <script src="{{asset('assets/js/paper-kit.js?v=2.2.0')}}" type="text/javascript"></script>
-        <script>$('.datetimepicker').datetimepicker({
-    icons: {
-        time: "fa fa-clock-o",
-        date: "fa fa-calendar",
-        up: "fa fa-chevron-up",
-        down: "fa fa-chevron-down",
-        previous: 'fa fa-chevron-left',
-        next: 'fa fa-chevron-right',
-        today: 'fa fa-screenshot',
-        clear: 'fa fa-trash',
-        close: 'fa fa-remove'
-    }
-});</script>
+        <script>
+            $('.datetimepicker').datetimepicker({
+                icons: {
+                    time: "fa fa-clock-o",
+                    date: "fa fa-calendar",
+                    up: "fa fa-chevron-up",
+                    down: "fa fa-chevron-down",
+                    previous: 'fa fa-chevron-left',
+                    next: 'fa fa-chevron-right',
+                    today: 'fa fa-screenshot',
+                    clear: 'fa fa-trash',
+                    close: 'fa fa-remove'
+                }
+            });
+
+        </script>
 </body>
 
 
