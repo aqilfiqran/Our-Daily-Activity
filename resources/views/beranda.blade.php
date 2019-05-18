@@ -16,49 +16,49 @@ Home
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 </ol>
-                <div class="carousel-inner pb-3 ">
+                <div class="carousel-inner pb-3">
                     <div class="carousel-item active">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
-                            <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
-                                    <b>
-                                        Work Schedule
+                        <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
+                            <img class="card-img-top" src="{{asset('img/img1.jpg')}}" alt="First slide">
+                            <div class="card-body text-center ">
+                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                    <b style>
+                                        Money Box
                                     </b>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
-                            <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
-                                    <b>
-                                        Work Schedule
+                        <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
+                            <img class="card-img-top" src="{{asset('img/img13.jpeg')}}" alt="First slide">
+                            <div class="card-body text-center ">
+                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                    <b style>
+                                        Health Diet
                                     </b>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
-                            <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
-                                    <b>
-                                        Work Schedule
+                        <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
+                            <img class="card-img-top" src="{{asset('img/img9.jpeg')}}" alt="First slide">
+                            <div class="card-body text-center ">
+                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                    <b style>
+                                        Fashion Planning
                                     </b>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="card">
-                            <img class="card-img-top" src="{{asset('img/download.jpg')}}" alt="First slide">
-                            <div class="card-body text-center bg-info">
-                                <a href="" class="card-title" style="color:rgba(14, 3, 49, 0.883);font-size:25px;">
-                                    <b>
+                        <div class="card gradient" style="background-color: rgba(128, 86, 169,0.8);">
+                            <img class="card-img-top" src="{{asset('img/img12.jpeg')}}" alt="First slide">
+                            <div class="card-body text-center ">
+                                <a href="" class="card-title" style="color:white;font-size:30px;">
+                                    <b style>
                                         Work Schedule
                                     </b>
                                 </a>
