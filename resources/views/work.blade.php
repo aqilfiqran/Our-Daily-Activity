@@ -7,9 +7,8 @@ work schedule
 @section('content')
 
 <div class="container">
-
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-7">
             <form>
                 <div class="form-group">
                     <div class="form-group">
@@ -18,15 +17,15 @@ work schedule
 
                         <div class="form-group">
                             <label for="exampleInputPassword1">Note</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1"
-                                placeholder="your schedule">
+                            <textarea rows='4' cols='1' type="text-area" class="form-control" id="exampleInputPassword1"
+                                placeholder="your schedule"></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary">Save</button>
                     </div>
             </form>
         </div>
-        <div class="col-md-6">hgyhgygy</div>
     </div>
+</div>
 </div>
 @endsection

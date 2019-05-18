@@ -20,4 +20,23 @@ class UserController extends Controller
     {
         return view('work');
     }
+    public function fashion()
+    {
+        return view('fashion');
+    }
+    public function money()
+    {
+        return view('money');
+    }
+    public function healthy()
+    {
+        return view('healthy');
+    }
+     public function calender()
+    {
+        return view('calender');
+    }
+
+
+
 }
