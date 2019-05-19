@@ -41,4 +41,8 @@ class UserController extends Controller
         $jadwal = User::find(Auth::user()->id);
         return view('calender', compact('jadwal'));
     }
+    public function detail()
+    {
+        return view('detail');
+    }
 }
