@@ -16,9 +16,9 @@ class Job
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->job == 'member')
-            return $next($request);
+        if (Auth::user()->job == 1)
+            return redirect()->route('admin');
 
-        return redirect('/admin');
+        return $next($request);
     }
 }

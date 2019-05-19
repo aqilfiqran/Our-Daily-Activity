@@ -27,10 +27,11 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md  fixed-top navbar-color-on-scroll" color-on-scroll="100"style="background-color: rgba(128, 86, 169,0.8);">
+        <nav class="navbar navbar-expand-md fixed-top"
+            style="background-color: rgba(128, 86, 169,0.8);">
             <div class="container">
                 <div class="navbar-translate">
-                    <a class="navbar-brand" href="{{ url('/') }}" rel="tooltip" title="Coded by Creative Tim"
+                    <a class="navbar-brand" href="{{ route('user') }}" rel="tooltip" title="Coded by Creative Tim"
                         data-placement="bottom" target="_blank">
                         Our Daily Activity
                     </a>
@@ -46,10 +47,10 @@
                     <ul class="navbar-nav">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
+                            <a class="nav-link" href="{{ route('user') }}">{{ __('Home') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/article') }}">{{ __('Article') }}</a>
+                            <a class="nav-link" href="{{ route('article') }}">{{ __('Article') }}</a>
                         </li>
                         @guest
                         <li class="nav-item">
@@ -68,6 +69,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('calender') }}">{{ __('Calender') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
@@ -85,47 +87,42 @@
             </div>
         </nav>
 
-        <div class="page-header header-filter pt-5 mt-5"
-            style="background-image: url('{{asset('img/img5.jpg')}}'); background-size: cover; background-position: top center;">
-            @yield('content')
-
+        <div class="page-header header-filter " style="background-image: url('{{asset('img/img5.jpg')}}'); background-size: cover; background-position: top center;">
+            <div class="col-lg-12 pt-5 mt-5">
+                    @yield('content')
+            </div>
         </div>
-        <div class="footer register-footer text-center">
-            <h6>©
-                <script>
-                    document.write(new Date().getFullYear())
+    </div>
 
-                </script>, made with <i class="fa fa-heart heart"></i> by BAZAR</h6>
-        </div>
-        <!--   Core JS Files   -->
-        <script src="{{asset('assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('assets/js/core/popper.min.js')}}" type="text/javascript"></script>
-        <script src="{{asset('assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
-        <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-        <script src="{{asset('assets/js/plugins/bootstrap-switch.js')}}"></script>
-        <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-        <script src="{{asset('assets/js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
-        <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-        <script src="{{asset('assets/js/plugins/moment.min.js')}}"></script>
-        <script src="{{asset('assets/js/plugins/bootstrap-datepicker.js')}}" type="text/javascript"></script>
-        <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
-        <script src="{{asset('assets/js/paper-kit.js?v=2.2.0')}}" type="text/javascript"></script>
-        <script>
-            $('.datetimepicker').datetimepicker({
-                icons: {
-                    time: "fa fa-clock-o",
-                    date: "fa fa-calendar",
-                    up: "fa fa-chevron-up",
-                    down: "fa fa-chevron-down",
-                    previous: 'fa fa-chevron-left',
-                    next: 'fa fa-chevron-right',
-                    today: 'fa fa-screenshot',
-                    clear: 'fa fa-trash',
-                    close: 'fa fa-remove'
-                }
-            });
+    <!--   Core JS Files   -->
+    <script src="{{asset('assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="{{asset('assets/js/plugins/bootstrap-switch.js')}}"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="{{asset('assets/js/plugins/nouislider.min.js')}}" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="{{asset('assets/js/plugins/moment.min.js')}}"></script>
+    <script src="{{asset('assets/js/plugins/bootstrap-datepicker.js')}}" type="text/javascript"></script>
+    <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+    <script src="{{asset('assets/js/paper-kit.js?v=2.2.0')}}" type="text/javascript"></script>
+    <script>
+        $('.datetimepicker').datetimepicker({
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
 
-        </script>
+    </script>
 </body>
 
 

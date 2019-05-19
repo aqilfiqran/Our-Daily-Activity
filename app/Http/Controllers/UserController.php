@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Article;
+use App\User;
 
 class UserController extends Controller
 {
@@ -13,17 +15,19 @@ class UserController extends Controller
     }
     public function article()
     {
-        $post = Article::all();
-        return view('article', compact('post'));
+        $article = Article::all();
+        return view('article', compact('article'));
     }
     public function work()
     {
         return view('work');
     }
+
     public function fashion()
     {
         return view('fashion');
     }
+
     public function money()
     {
         return view('money');
@@ -32,11 +36,9 @@ class UserController extends Controller
     {
         return view('healthy');
     }
-     public function calender()
+    public function calender()
     {
-        return view('calender');
+        $jadwal = User::find(Auth::user()->id);
+        return view('calender', compact('jadwal'));
     }
-
-
-
 }
