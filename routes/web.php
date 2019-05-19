@@ -31,3 +31,4 @@ Route::post('/healthy/tambah', 'StoreController@health')->name('health.tambah')-
 Route::post('/money/tambah', 'StoreController@money')->name('money.tambah')->middleware('auth');
 Route::post('/work/tambah', 'StoreController@work')->name('work.tambah')->middleware('auth');
 Route::post('/fashion/tambah', 'StoreController@fashion')->name('fashion.tambah')->middleware('auth');
+Route::get('/detail', 'UserController@detail')->name('detail')->middleware('auth');
