@@ -5,13 +5,18 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Article;
-use App\User;
 
 class UserController extends Controller
 {
     public function index()
     {
         return view('beranda');
+    }
+
+    public function detail($id)
+    {
+        $article = Article::find($id);
+        return view('detail', compact('article'));
     }
     public function article()
     {
@@ -35,14 +40,5 @@ class UserController extends Controller
     public function healthy()
     {
         return view('healthy');
-    }
-    public function calender()
-    {
-        $jadwal = User::find(Auth::user()->id);
-        return view('calender', compact('jadwal'));
-    }
-    public function detail()
-    {
-        return view('detail');
     }
 }

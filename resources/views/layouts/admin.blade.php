@@ -64,13 +64,13 @@
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="{{('img/ikon1.jpg')}}" class="user-image" alt="User Image">
+                                <img src="{{asset('img/ikon1.jpg')}}" class="user-image" alt="User Image">
                                 <span class="hidden-xs">{{Auth::user()->username}}</span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header">
-                                    <img src="{{('img/ikon1.jpg')}}" class="img-circle" alt="User Image">
+                                    <img src="{{asset('img/ikon1.jpg')}}" class="img-circle" alt="User Image">
 
                                     <p>
                                         {{Auth::user()->username}} - Web Developer
@@ -161,12 +161,12 @@
     <script src="{{asset('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
     <!-- Bootstrap WYSIHTML5 -->
     <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
-    {{-- <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script> --}}
+    <script src="{{asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
     <!-- Slimscroll -->
     <script src="{{asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
     <!-- FastClick -->
     <script src="{{asset('bower_components/fastclick/lib/fastclick.js')}}"></script>
-    {{-- <script src="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script> --}}
+    <script src="{{asset('bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->

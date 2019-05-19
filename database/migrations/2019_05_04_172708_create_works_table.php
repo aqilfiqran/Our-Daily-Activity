@@ -17,9 +17,9 @@ class CreateWorksTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->longtext('note_work');
-            $table->date('jadwal');
+            $table->BigInteger('jadwal');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

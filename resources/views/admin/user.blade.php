@@ -8,23 +8,23 @@
         <div class="row">
             <div class="col-xs-12">
                 <div class="box">
-                    <div class="box-header text-center" style="background-color: rgb(39, 88, 138);">
-                        <h2 class="box-title" style="color : white"><strong>POST</strong></h2>
+                    <div class="box-header text-center bg-info">
+                        <h3 class="box-title">POST</h3>
                     </div>
                     <!-- /.box-header -->
                     <div class="box-body">
-                        <table id="example2" class="table text-center">
+                        <table id="example2" class="table table-bordered table-hover">
                             <thead>
                                 <tr>
-                                    <th>USERNAME</th>
-                                    <th>MANAGE</th>
+                                    <th>Username</th>
+                                    <th>Manage</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @foreach ($user as $users)
                                 <tr class="text-center">
                                     <td>{{$users->username}}</td>
-                                    <td><a href="{{route('admin.delete',$users->id)}}"><i class="fas fa-trash" style="color: rgb(39, 88, 138)"></i></a></td>
+                                    <td><a href="{{route('admin.delete',$users->id)}}"><i class="fas fa-trash"></i></a></td>
                                 </tr>
                                 @endforeach
                             </tbody>
@@ -41,6 +41,5 @@
     <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
-
 
 @endsection

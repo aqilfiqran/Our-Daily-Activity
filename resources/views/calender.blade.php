@@ -1,31 +1,51 @@
 @extends('layouts.app')
 
 @section('title')
-calender
+List Note
 @endsection
 
 @section('content')
-
-<br>
-<br>
-<br>
-<br>
-
 <div class="container">
-
-    <div class="text-center">
-        <h4>YOUR DAILY ACTIVITY</h4>
-    </div>
-    <br>
-    <br>
-    <br>
-
     <div class="row">
-        <div class="col-md-3">
-            <div class="card card-nav-tabs">
-                <h4 class="card-header card-header-info">25 Aug 2019 <small>12.02 PM</small></h4>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header card-header-info">25 Aug 2019</div>
                 <div class="card-body">
-                    <h4 class="card-title">Your Schedule</h4>
+                    @foreach ($fashion as $item)
+                    <div class="card-title pb-2">Fashion</div>
+                    <img class="card-img-top pb-4" src="{{asset('artikel/fashion/'.$item->gambar)}}"
+                        alt="Card image cap">
+                    @endforeach
+                    <div class="card-title">Note Work</div>
+                    <p><small>projek pbw</small></p>
+                    <p><small>projek pbw</small></p>
+                    <p><small>projek pbw</small></p>
+                    <div class="card-title">Money Box</div>
+                    <div class="card card-nav-tabs" style="width: 10rem;">
+                        <div class="card-header card-header-danger">
+                            Saldo : Rp.
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Debit : Rp. </li>
+                            <li class="list-group-item">Credit : Rp. </li>
+                        </ul>
+                    </div>
+                    <div class="card-title">Healthy Diet</div>
+
+                    <div class="card" style="width: 10rem;">
+                        <div class="card-body">
+                            <p class="card-text">You Have to Eat : </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card card-nav-tabs">
+                <div class="card-header card-header-info">25 Aug 2019 <small>12.02 PM</small></div>
+                <div class="card-body">
+                    <div class="card-title">Your Schedule</div>
                     <p><input type="checkbox" value="">
                         <small>projek pbw</small></p>
                     <p><input type="checkbox" value="">
@@ -34,7 +54,7 @@ calender
                         <small>projek pbw</small></p>
                     <br>
                     <br>
-                    <h4 class="card-title">Fashion Schedule</h4>
+                    <div class="card-title">Fashion Schedule</div>
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src=".." alt="Card image cap">
                         <div class="card-body">
@@ -43,10 +63,7 @@ calender
                     </div>
                     <br>
                     <br>
-
-
-                    <h4 class="card-title">Money Box</h4>
-
+                    <div class="card-title">Money Box</div>
                     <div class="card card-nav-tabs" style="width: 10rem;">
                         <div class="card-header card-header-danger">
                             Saldo : Rp.
@@ -58,170 +75,15 @@ calender
                     </div>
                     <br>
                     <br>
-                    <h4 class="card-title">Healthy Diet</h4>
-
+                    <div class="card-title">Healthy Diet</div>
                     <div class="card" style="width: 10rem;">
                         <div class="card-body">
                             <p class="card-text">You Have to Eat : </p>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-
-        <div class="col-md-3">
-            <div class="card card-nav-tabs">
-                <h4 class="card-header card-header-info">25 Aug 2019 <small>12.02 PM</small></h4>
-                <div class="card-body">
-                    <h4 class="card-title">Your Schedule</h4>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Fashion Schedule</h4>
-                    <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src=".." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">This is Your Fashion For Monday</p>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-
-
-                    <h4 class="card-title">Money Box</h4>
-
-                    <div class="card card-nav-tabs" style="width: 10rem;">
-                        <div class="card-header card-header-danger">
-                            Saldo : Rp.
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Debit : Rp. </li>
-                            <li class="list-group-item">Credit : Rp. </li>
-                        </ul>
-                    </div>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Healthy Diet</h4>
-
-                    <div class="card" style="width: 10rem;">
-                        <div class="card-body">
-                            <p class="card-text">You Have to Eat : </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="card card-nav-tabs">
-                <h4 class="card-header card-header-info">25 Aug 2019 <small>12.02 PM</small></h4>
-                <div class="card-body">
-                    <h4 class="card-title">Your Schedule</h4>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Fashion Schedule</h4>
-                    <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src=".." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">This is Your Fashion For Monday</p>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-
-
-                    <h4 class="card-title">Money Box</h4>
-
-                    <div class="card card-nav-tabs" style="width: 10rem;">
-                        <div class="card-header card-header-danger">
-                            Saldo : Rp.
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Debit : Rp. </li>
-                            <li class="list-group-item">Credit : Rp. </li>
-                        </ul>
-                    </div>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Healthy Diet</h4>
-
-                    <div class="card" style="width: 10rem;">
-                        <div class="card-body">
-                            <p class="card-text">You Have to Eat : </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="card card-nav-tabs">
-                <h4 class="card-header card-header-info">25 Aug 2019 <small>12.02 PM</small></h4>
-                <div class="card-body">
-                    <h4 class="card-title">Your Schedule</h4>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <p><input type="checkbox" value="">
-                        <small>projek pbw</small></p>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Fashion Schedule</h4>
-                    <div class="card" style="width: 10rem;">
-                        <img class="card-img-top" src=".." alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">This is Your Fashion For Monday</p>
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-
-
-                    <h4 class="card-title">Money Box</h4>
-
-                    <div class="card card-nav-tabs" style="width: 10rem;">
-                        <div class="card-header card-header-danger">
-                            Saldo : Rp.
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Debit : Rp. </li>
-                            <li class="list-group-item">Credit : Rp. </li>
-                        </ul>
-                    </div>
-                    <br>
-                    <br>
-                    <h4 class="card-title">Healthy Diet</h4>
-
-                    <div class="card" style="width: 10rem;">
-                        <div class="card-body">
-                            <p class="card-text">You Have to Eat : </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
     </div>
 </div>
 

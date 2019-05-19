@@ -29,12 +29,24 @@ class AdminController extends Controller
     }
     public function edit()
     {
-        return view('admin.edit');
+        $article = Article::all();
+        return view('admin.edit', compact('article'));
+    }
+
+    public function update($id)
+    {
+        $article = Article::find($id);
+        return view('admin.update', compact('article'));
+    }
+    public function delete($id)
+    {
+        $Article = Article::where('id', $id);
+        $Article->delete();
+        return redirect()->route('admin.edit');
     }
     public function destroy($id)
     {
-        $user = User::where('id', $id);
-        $user->delete();
+        $user = User::destroy($id);
 
         return redirect()->route('admin');
     }

@@ -17,9 +17,9 @@ class CreateDietsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->string('eating_plan');
-            $table->date('jadwal');
+            $table->BigInteger('jadwal');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

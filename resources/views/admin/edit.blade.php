@@ -25,12 +25,17 @@ edit article
                                 </tr>
                             </thead>
                             <tbody>
+                                @php
+                                    $i=1;
+                                @endphp
+                                @foreach ($article as $articles)
                                 <tr class="text-center">
-                                    <th scope="row">1</th>
-                                    <td>Healthy Diet</td>
-                                    <td><a href=""><i class='fas fa-edit' style="color: rgb(39, 88, 138)"></i></a></td>
-                                    <td><a href=""><i class='fas fa-trash' style="color: rgb(39, 88, 138)"></i> </a></td>
+                                <th scope="row">{{$i++}}</th>
+                                    <td>{{$articles->singkat_artikel}}</td>
+                                    <td><a href="{{route('admin.update',$articles->id)}}"><i class='fas fa-edit' style="color: rgb(39, 88, 138)"></i></a></td>
+                                    <td><a href="{{route('admin.destroy',$articles->id)}}"><i class='fas fa-trash' style="color: rgb(39, 88, 138)"></i> </a></td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

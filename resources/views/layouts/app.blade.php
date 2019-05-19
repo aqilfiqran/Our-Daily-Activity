@@ -22,7 +22,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{{asset('css/calender.css')}}">
-    <!-- Theme style -->
 
 </head>
 
@@ -70,7 +69,10 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('calender') }}">{{ __('Calender') }}</a>
+                                <a class="dropdown-item" href="{{ route('history.work') }}">{{ __('Note Work') }}</a>
+                                <a class="dropdown-item" href="{{ route('history.fashion') }}">{{ __('Fashion') }}</a>
+                                <a class="dropdown-item" href="{{ route('history.money') }}">{{ __('Money Box') }}</a>
+                                <a class="dropdown-item" href="{{ route('history.health') }}">{{ __('Healthy Diet') }}</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                     document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
@@ -108,7 +110,6 @@
     <script src="{{asset('assets/js/plugins/bootstrap-datepicker.js')}}" type="text/javascript"></script>
     <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
     <script src="{{asset('assets/js/paper-kit.js?v=2.2.0')}}" type="text/javascript"></script>
-
     <script>
         $('.datetimepicker').datetimepicker({
             icons: {

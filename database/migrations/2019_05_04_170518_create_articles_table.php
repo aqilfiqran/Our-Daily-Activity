@@ -19,9 +19,9 @@ class CreateArticlesTable extends Migration
             $table->longtext('isi_artikel');
             $table->longtext('singkat_artikel');
             $table->string('gambar');
-            $table->date('jadwal');
+            $table->BigInteger('jadwal');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

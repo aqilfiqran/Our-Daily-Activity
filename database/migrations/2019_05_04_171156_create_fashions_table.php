@@ -17,12 +17,9 @@ class CreateFashionsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
             $table->string('gambar');
-            $table->string('warna_jilbab');
-            $table->string('warna_atasan');
-            $table->string('warna_bawahan');
-            $table->date('jadwal');
+            $table->BigInteger('jadwal');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 

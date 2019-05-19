@@ -16,12 +16,12 @@ class CreateTabungansTable extends Migration
         Schema::create('tabungans', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->unsigned();
-            $table->string('saldo');
-            $table->string('kredit');
-            $table->string('debit');
-            $table->date('jadwal');
+            $table->string('saldo_sekarang');
+            $table->string('pengeluaran');
+            $table->string('pemasukan');
+            $table->BigInteger('jadwal');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
