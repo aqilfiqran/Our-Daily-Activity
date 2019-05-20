@@ -16,7 +16,7 @@ article
         @endif
         <div class="col-md-6 text-center">
             <a href="examples/landing.html" target="_blank">
-                <img src="{{asset('artikel/'.$articles->gambar)}}" alt="Rounded Image"
+                <img src="{{asset('artikel/'.$articles->gambar)}}" width="100px" height="300px" alt="Rounded Image"
                     class="img-rounded img-responsive" style="width: 100%">
                 <a href="{{route('detail',$articles->id)}}" class="btn btn-outline-neutral btn-round"
                     target="_blank">{{$articles->singkat_artikel}}</a>
